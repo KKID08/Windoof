@@ -1,3 +1,5 @@
+#define GLEW_STATIC
+
 #include "Application.h"
 #include "Arrow.h"
 
@@ -6,13 +8,22 @@
 #include <iostream>
 
 int main() {
-
     glfwInit();
 
-    glfwWindowHint(GLFW_DECORATED, GLFW_FALSE);
+    glfwWindowHint(GLFW_DECORATED, 0);
+    glfwWindowHint(GLFW_VERSION_MAJOR, 3);
+    glfwWindowHint(GLFW_VERSION_MINOR, 3);
+    glfwWindowHint(GLFW_TRANSPARENT_FRAMEBUFFER, 1);
+    glfwWindowHint(GLFW_OPENGL_DEBUG_CONTEXT, 1);
+    glfwWindowHint(GLFW_FOCUSED, GLFW_FALSE);
     glfwWindowHint(GLFW_MOUSE_PASSTHROUGH, GLFW_TRUE);
     glfwWindowHint(GLFW_FLOATING, GLFW_TRUE);
+
+    /*
+    glfwWindowHint(GLFW_DECORATED, GLFW_FALSE);
+    glfwWindowHint(GLFW_MOUSE_PASSTHROUGH, GLFW_TRUE);
     glfwWindowHint(GLFW_TRANSPARENT_FRAMEBUFFER, GLFW_TRUE);
+     */
 
     int windowWidth, windowHeight;
     glfwGetMonitorWorkarea(glfwGetPrimaryMonitor(), nullptr, nullptr, &windowWidth, &windowHeight);
@@ -53,5 +64,4 @@ int main() {
             }
         }
     });
-
 }

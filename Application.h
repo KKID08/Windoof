@@ -13,7 +13,18 @@ public:
 private:
     GLFWwindow* window;
     EventHandler eventHandler;
+    inline static void compileShader();
 };
 
+/*
+ * int a = 0
+ * while(true) {
+ *  calc(a)
+ * }
+ * func calc() {
+ *  calc()
+ *  sdff
+ * }
+ */
 
 #endif //ARROW_APPLICATION_H

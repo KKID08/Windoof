@@ -1,0 +1,18 @@
+# ninja log v5
+9	391	7205458283657714	CMakeFiles/Arrow.dir/EventHandler.cpp.obj	67fbff6ff77f5ba6
+5	784	7205458287576513	CMakeFiles/Arrow.dir/Arrow.cpp.obj	3f629b34c67f8fed
+14	736	7205543841839580	CMakeFiles/OpenGL.dir/Application.cpp.obj	7c8c6c7d1fc6c287
+4	689	7205708688106533	CMakeFiles/OpenGL.dir/main.cpp.obj	1da6f509abc3116b
+8	722	7205459031110551	CMakeFiles/Arrow.dir/Application.cpp.obj	5db452c3f5f4735
+1	355	7205508110849470	CMakeFiles/OpenGL.dir/EventHandler.cpp.obj	3f99e6cbe4a8e24
+4	56	7205483763446667	CMakeFiles/Arrow.dir/main.cpp.obj	5cbcb11eb55fc5d8
+1	148	7205754503786544	build.ninja	b0527dfd4baff0e5
+56	149	7205483764340097	Arrow.exe	b1c0a920cbb96d25
+9	928	7205703086251732	CMakeFiles/OpenGL.dir/Arrow.cpp.obj	76ad3aa111cec9c8
+689	794	7205708689130504	OpenGL.exe	cc12f461e9e45db
+15	644	7205673493588600	CMakeFiles/OpenGL.dir/GUIObject.cpp.obj	746c40420443d834
+12	753	7205673494660310	CMakeFiles/OpenGL.dir/Shader.cpp.obj	7e333e62952cf1d5
+7	522	7205678436717886	CMakeFiles/OpenGL.dir/t.cpp.obj	e3465a8398cd486a
+12	685	7205754924185905	CMakeFiles/OpenGL.dir/Application.cpp.obj	7c8c6c7d1fc6c287
+4	744	7205754924774492	CMakeFiles/OpenGL.dir/main.cpp.obj	1da6f509abc3116b
+8	753	7205754924868562	CMakeFiles/OpenGL.dir/Arrow.cpp.obj	76ad3aa111cec9c8

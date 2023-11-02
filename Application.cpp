@@ -11,7 +11,7 @@ EventHandler *Application::getEventHandler() {
 }
 
 void Application::exec(std::function<void()> func) {
-    while (true) {//!glfwWindowShouldClose(window)) {
+    while (!glfwWindowShouldClose(window)) {
         // Clear
         glClear(GL_COLOR_BUFFER_BIT);
         glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
@@ -24,4 +24,7 @@ void Application::exec(std::function<void()> func) {
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
+}
+
+void Application::compileShader() {
 }
