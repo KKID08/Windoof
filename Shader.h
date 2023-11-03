@@ -7,6 +7,8 @@
 #include <fstream>
 #include <GL/glew.h>
 
+#include "DefaultShader.h"
+
 class Shader {
 public:
     static unsigned int loadShaderProgram(std::string folderPath) {
@@ -23,36 +25,13 @@ public:
         GLuint fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
         GLuint shaderProgram = glCreateProgram();
 
-        // Vertex shader
-        const char* vsc = vertexShaderS.c_str();
-        glShaderSource(vertexShader, 1, &vsc, nullptr);
-        glCompileShader(vertexShader);
-        glAttachShader(shaderProgram, vertexShader);
+        // Load Shader
+        unsigned int vertexShader   = loadShader(shaderProgram, GL_VERTEX_SHADER, folderPath + "/vertex.glsl");
+        unsigned int geometryShader = loadShader(shaderProgram, GL_GEOMETRY_SHADER, folderPath + "/geometry.glsl");
+        unsigned int fragmentShader = loadShader(shaderProgram, GL_FRAGMENT_SHADER, folderPath + "/fragment.glsl");
 
-        // Geometry shader
-        const char* gsc = geometryShaderS.c_str();
-        if (!geometryShaderS.empty()) {
-            glShaderSource(geometryShader, 1, &gsc, nullptr);
-            glCompileShader(geometryShader);
-            glAttachShader(shaderProgram, geometryShader);
-        }
-
-        // Fragment shader
-        const char* fsc = fragmentShaderS.c_str();
-        glShaderSource(fragmentShader, 1, &fsc, nullptr);
-        glCompileShader(fragmentShader);
-        glAttachShader(shaderProgram, fragmentShader);
-
+        // Link Program
         glLinkProgram(shaderProgram);
-
-        // Check for shader program link errors
-        GLint success;
-        GLchar infoLog[512];
-        glGetProgramiv(shaderProgram, GL_LINK_STATUS, &success);
-        if (!success) {
-            glGetProgramInfoLog(shaderProgram, 512, nullptr, infoLog);
-            std::cerr << "Shader program linking error: " << infoLog << std::endl;
-        }
 
         return shaderProgram;
     };

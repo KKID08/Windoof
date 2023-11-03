@@ -1,7 +1,7 @@
 #ifndef DEFAULTSHADER_H
 #define DEFAULTSHADER_H
 
-const char* defaultVertexShader = R"(
+static const char* defaultVertexShader = R"(
     #version 330 core
     layout (location = 0) in vec3 aPos;
 
@@ -9,12 +9,12 @@ const char* defaultVertexShader = R"(
         gl_Position = vec4(aPos, 1.0);
     }
 )";
-const char* defaultFragmentShader = R"(
+static const char* defaultFragmentShader = R"(
     #version 330 core
     out vec4 FragColor;
 
     void main() {
-        float squareSize = 0.05;
+        float squareSize = 0.1;
         vec2 fragCoord = gl_FragCoord.xy / 800.0;
         int squareX = int(fragCoord.x / squareSize);
         int squareY = int(fragCoord.y / squareSize);

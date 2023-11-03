@@ -10,6 +10,10 @@ public:
     explicit Application(GLFWwindow *window);
     EventHandler *getEventHandler();
     void exec(std::function<void()> func = nullptr);
+
+    static int height;
+    static int width;
+    static float aspectRatio;
 private:
     GLFWwindow* window;
     EventHandler eventHandler;

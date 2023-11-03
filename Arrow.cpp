@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Application.h"
 #include "Arrow.h"
 
 
@@ -25,12 +26,12 @@ void Arrow::onFrame() {
     glUniform1f(glGetUniformLocation(shaderProgram, "end.rotation"), end.rotation);
     glUniform1f(glGetUniformLocation(shaderProgram, "end.scale"), end.scale);
     glUniform1d(glGetUniformLocation(shaderProgram, "startTime"), startTime);
+
     glUniform1d(glGetUniformLocation(shaderProgram, "duration"), duration);
     glUniform1d(glGetUniformLocation(shaderProgram, "currentTime"), currentTime);
-    glUniform1f(glGetUniformLocation(shaderProgram, "currentTimeColor"), currentTime);
+    glUniform1f(glGetUniformLocation(shaderProgram, "currentTimeColor"), currentTime); // TODO: Remove later (Also in Shader)
 
-    // Use the shaders program
-    glUseProgram(shaderProgram);
+    glUniform1f(glGetUniformLocation(shaderProgram, "aspectRatio"), Application::aspectRatio);
 
     // Bind the VAO and draw the triangle
     glBindVertexArray(VAO);
@@ -45,7 +46,7 @@ void Arrow::move(float x, float y, float rotation, float scale, double duration)
 }
 
 void Arrow::init() {
-    shaderProgram = Shader::loadShaderProgram("../resources/shaders/arrow"); // TODO: Change Later
+    shaderProgram = Shader::loadShaderProgram("../resources/shader/arrow"); // TODO: Change Later
 
     // Create and bind a VAO and VBO for the triangle
     unsigned int VBO;
@@ -57,8 +58,6 @@ void Arrow::init() {
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
 
     // Configure vertex attributes
-    glVertexAttribPointer(0, 1, GL_FLOAT, GL_FALSE, 2 * sizeof(float), nullptr);
+    glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 2 * sizeof(float), nullptr);
     glEnableVertexAttribArray(0);
-    glVertexAttribPointer(1, 1, GL_FLOAT, GL_FALSE, 2 * sizeof(float), (void*)sizeof(float));
-    glEnableVertexAttribArray(1);
 }

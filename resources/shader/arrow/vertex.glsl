@@ -14,6 +14,7 @@ uniform Point end;
 uniform double startTime;
 uniform double duration;
 uniform double currentTime;
+uniform float aspectRatio;
 
 void main() {
     float progress = (duration == 0) ? 1 : float(clamp((currentTime - startTime) / duration, 0, 1));

@@ -1,9 +1,14 @@
 #include "Application.h"
 
+int Application::height;
+int Application::width;
+//float Application::aspectRatio;
+
 Application::Application(GLFWwindow *window)
 : window(window)
 {
-
+    glfwGetWindowSize(window, &width, &height);
+    aspectRatio = (float)width / (float)height;
 }
 
 EventHandler *Application::getEventHandler() {

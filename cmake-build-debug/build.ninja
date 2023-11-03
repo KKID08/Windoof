@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: OpenGL
+# Project: Arrow
 # Configurations: Debug
 # =============================================================================
 
@@ -39,75 +39,82 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/domin/CLionProjects/OpenGL/cmake-build-debug/
+cmake_ninja_workdir = /home/sean/CLionProjects/Windoof/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target OpenGL
+# Object build statements for EXECUTABLE target Arrow
 
 
 #############################################
-# Order-only phony target for OpenGL
+# Order-only phony target for Arrow
 
-build cmake_object_order_depends_target_OpenGL: phony || CMakeFiles/OpenGL.dir
+build cmake_object_order_depends_target_Arrow: phony || CMakeFiles/Arrow.dir
 
-build CMakeFiles/OpenGL.dir/main.cpp.obj: CXX_COMPILER__OpenGL_unscanned_Debug C$:/Users/domin/CLionProjects/OpenGL/main.cpp || cmake_object_order_depends_target_OpenGL
-  DEP_FILE = CMakeFiles\OpenGL.dir\main.cpp.obj.d
+build CMakeFiles/Arrow.dir/main.cpp.o: CXX_COMPILER__Arrow_unscanned_Debug /home/sean/CLionProjects/Windoof/main.cpp || cmake_object_order_depends_target_Arrow
+  DEP_FILE = CMakeFiles/Arrow.dir/main.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/domin/CLionProjects/OpenGL -IC:/Users/domin/Documents/Private/Coding/OpenGL/Libs/glew/include -IC:/Users/domin/Documents/Private/Coding/OpenGL/Libs/glfw/include -IC:/Users/domin/Documents/Private/Coding/OpenGL/Libs/glfw/src
-  OBJECT_DIR = CMakeFiles\OpenGL.dir
-  OBJECT_FILE_DIR = CMakeFiles\OpenGL.dir
+  INCLUDES = -I/home/sean/CLionProjects/Windoof -I/home/sean/libs/glew/include -I/home/sean/libs/glfw/include -I/home/sean/libs/glfw/src
+  OBJECT_DIR = CMakeFiles/Arrow.dir
+  OBJECT_FILE_DIR = CMakeFiles/Arrow.dir
 
-build CMakeFiles/OpenGL.dir/Arrow.cpp.obj: CXX_COMPILER__OpenGL_unscanned_Debug C$:/Users/domin/CLionProjects/OpenGL/Arrow.cpp || cmake_object_order_depends_target_OpenGL
-  DEP_FILE = CMakeFiles\OpenGL.dir\Arrow.cpp.obj.d
+build CMakeFiles/Arrow.dir/home/sean/libs/glew/src/glew.c.o: C_COMPILER__Arrow_unscanned_Debug /home/sean/libs/glew/src/glew.c || cmake_object_order_depends_target_Arrow
+  DEP_FILE = CMakeFiles/Arrow.dir/home/sean/libs/glew/src/glew.c.o.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/domin/CLionProjects/OpenGL -IC:/Users/domin/Documents/Private/Coding/OpenGL/Libs/glew/include -IC:/Users/domin/Documents/Private/Coding/OpenGL/Libs/glfw/include -IC:/Users/domin/Documents/Private/Coding/OpenGL/Libs/glfw/src
-  OBJECT_DIR = CMakeFiles\OpenGL.dir
-  OBJECT_FILE_DIR = CMakeFiles\OpenGL.dir
+  INCLUDES = -I/home/sean/CLionProjects/Windoof -I/home/sean/libs/glew/include -I/home/sean/libs/glfw/include -I/home/sean/libs/glfw/src
+  OBJECT_DIR = CMakeFiles/Arrow.dir
+  OBJECT_FILE_DIR = CMakeFiles/Arrow.dir/home/sean/libs/glew/src
 
-build CMakeFiles/OpenGL.dir/EventHandler.cpp.obj: CXX_COMPILER__OpenGL_unscanned_Debug C$:/Users/domin/CLionProjects/OpenGL/EventHandler.cpp || cmake_object_order_depends_target_OpenGL
-  DEP_FILE = CMakeFiles\OpenGL.dir\EventHandler.cpp.obj.d
+build CMakeFiles/Arrow.dir/Arrow.cpp.o: CXX_COMPILER__Arrow_unscanned_Debug /home/sean/CLionProjects/Windoof/Arrow.cpp || cmake_object_order_depends_target_Arrow
+  DEP_FILE = CMakeFiles/Arrow.dir/Arrow.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/domin/CLionProjects/OpenGL -IC:/Users/domin/Documents/Private/Coding/OpenGL/Libs/glew/include -IC:/Users/domin/Documents/Private/Coding/OpenGL/Libs/glfw/include -IC:/Users/domin/Documents/Private/Coding/OpenGL/Libs/glfw/src
-  OBJECT_DIR = CMakeFiles\OpenGL.dir
-  OBJECT_FILE_DIR = CMakeFiles\OpenGL.dir
+  INCLUDES = -I/home/sean/CLionProjects/Windoof -I/home/sean/libs/glew/include -I/home/sean/libs/glfw/include -I/home/sean/libs/glfw/src
+  OBJECT_DIR = CMakeFiles/Arrow.dir
+  OBJECT_FILE_DIR = CMakeFiles/Arrow.dir
 
-build CMakeFiles/OpenGL.dir/Application.cpp.obj: CXX_COMPILER__OpenGL_unscanned_Debug C$:/Users/domin/CLionProjects/OpenGL/Application.cpp || cmake_object_order_depends_target_OpenGL
-  DEP_FILE = CMakeFiles\OpenGL.dir\Application.cpp.obj.d
+build CMakeFiles/Arrow.dir/EventHandler.cpp.o: CXX_COMPILER__Arrow_unscanned_Debug /home/sean/CLionProjects/Windoof/EventHandler.cpp || cmake_object_order_depends_target_Arrow
+  DEP_FILE = CMakeFiles/Arrow.dir/EventHandler.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/domin/CLionProjects/OpenGL -IC:/Users/domin/Documents/Private/Coding/OpenGL/Libs/glew/include -IC:/Users/domin/Documents/Private/Coding/OpenGL/Libs/glfw/include -IC:/Users/domin/Documents/Private/Coding/OpenGL/Libs/glfw/src
-  OBJECT_DIR = CMakeFiles\OpenGL.dir
-  OBJECT_FILE_DIR = CMakeFiles\OpenGL.dir
+  INCLUDES = -I/home/sean/CLionProjects/Windoof -I/home/sean/libs/glew/include -I/home/sean/libs/glfw/include -I/home/sean/libs/glfw/src
+  OBJECT_DIR = CMakeFiles/Arrow.dir
+  OBJECT_FILE_DIR = CMakeFiles/Arrow.dir
 
-build CMakeFiles/OpenGL.dir/GUIObject.cpp.obj: CXX_COMPILER__OpenGL_unscanned_Debug C$:/Users/domin/CLionProjects/OpenGL/GUIObject.cpp || cmake_object_order_depends_target_OpenGL
-  DEP_FILE = CMakeFiles\OpenGL.dir\GUIObject.cpp.obj.d
+build CMakeFiles/Arrow.dir/Application.cpp.o: CXX_COMPILER__Arrow_unscanned_Debug /home/sean/CLionProjects/Windoof/Application.cpp || cmake_object_order_depends_target_Arrow
+  DEP_FILE = CMakeFiles/Arrow.dir/Application.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/domin/CLionProjects/OpenGL -IC:/Users/domin/Documents/Private/Coding/OpenGL/Libs/glew/include -IC:/Users/domin/Documents/Private/Coding/OpenGL/Libs/glfw/include -IC:/Users/domin/Documents/Private/Coding/OpenGL/Libs/glfw/src
-  OBJECT_DIR = CMakeFiles\OpenGL.dir
-  OBJECT_FILE_DIR = CMakeFiles\OpenGL.dir
+  INCLUDES = -I/home/sean/CLionProjects/Windoof -I/home/sean/libs/glew/include -I/home/sean/libs/glfw/include -I/home/sean/libs/glfw/src
+  OBJECT_DIR = CMakeFiles/Arrow.dir
+  OBJECT_FILE_DIR = CMakeFiles/Arrow.dir
+
+build CMakeFiles/Arrow.dir/Rectangle.cpp.o: CXX_COMPILER__Arrow_unscanned_Debug /home/sean/CLionProjects/Windoof/Rectangle.cpp || cmake_object_order_depends_target_Arrow
+  DEP_FILE = CMakeFiles/Arrow.dir/Rectangle.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -I/home/sean/CLionProjects/Windoof -I/home/sean/libs/glew/include -I/home/sean/libs/glfw/include -I/home/sean/libs/glfw/src
+  OBJECT_DIR = CMakeFiles/Arrow.dir
+  OBJECT_FILE_DIR = CMakeFiles/Arrow.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target OpenGL
+# Link build statements for EXECUTABLE target Arrow
 
 
 #############################################
-# Link the executable OpenGL.exe
+# Link the executable Arrow
 
-build OpenGL.exe: CXX_EXECUTABLE_LINKER__OpenGL_Debug CMakeFiles/OpenGL.dir/main.cpp.obj CMakeFiles/OpenGL.dir/Arrow.cpp.obj CMakeFiles/OpenGL.dir/EventHandler.cpp.obj CMakeFiles/OpenGL.dir/Application.cpp.obj CMakeFiles/OpenGL.dir/GUIObject.cpp.obj | C$:/Users/domin/Documents/Private/Coding/OpenGL/Libs/glfw/lib/glfw3.lib C$:/Users/domin/Documents/Private/Coding/OpenGL/Libs/glew/lib/Release/x64/glew32.lib
+build Arrow: CXX_EXECUTABLE_LINKER__Arrow_Debug CMakeFiles/Arrow.dir/main.cpp.o CMakeFiles/Arrow.dir/home/sean/libs/glew/src/glew.c.o CMakeFiles/Arrow.dir/Arrow.cpp.o CMakeFiles/Arrow.dir/EventHandler.cpp.o CMakeFiles/Arrow.dir/Application.cpp.o CMakeFiles/Arrow.dir/Rectangle.cpp.o | /home/sean/libs/glfw/build/src/libglfw3.a /home/sean/libs/glew/lib/libGLEW.a /usr/lib/x86_64-linux-gnu/libGL.so
   FLAGS = -g
-  LINK_LIBRARIES = C:/Users/domin/Documents/Private/Coding/OpenGL/Libs/glfw/lib/glfw3.lib  C:/Users/domin/Documents/Private/Coding/OpenGL/Libs/glew/lib/Release/x64/glew32.lib  -lopengl32  -lglu32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\OpenGL.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = OpenGL.exe
-  TARGET_IMPLIB = libOpenGL.dll.a
-  TARGET_PDB = OpenGL.exe.dbg
+  LINK_FLAGS = -rdynamic
+  LINK_LIBRARIES = /home/sean/libs/glfw/build/src/libglfw3.a  /home/sean/libs/glew/lib/libGLEW.a  -lGL
+  OBJECT_DIR = CMakeFiles/Arrow.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Arrow
+  TARGET_PDB = Arrow.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\domin\CLionProjects\OpenGL\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cd /home/sean/CLionProjects/Windoof/cmake-build-debug && /snap/clion/250/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -118,7 +125,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\domin\CLionProjects\OpenGL\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\domin\CLionProjects\OpenGL -BC:\Users\domin\CLionProjects\OpenGL\cmake-build-debug"
+  COMMAND = cd /home/sean/CLionProjects/Windoof/cmake-build-debug && /snap/clion/250/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/sean/CLionProjects/Windoof -B/home/sean/CLionProjects/Windoof/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -128,17 +135,15 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build OpenGL: phony OpenGL.exe
-
 # =============================================================================
 # Folder targets.
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/domin/CLionProjects/OpenGL/cmake-build-debug
+# Folder: /home/sean/CLionProjects/Windoof/cmake-build-debug
 
-build all: phony OpenGL.exe
+build all: phony Arrow
 
 # =============================================================================
 # Unknown Build Time Dependencies.
@@ -152,14 +157,14 @@ build all: phony OpenGL.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/FindOpenGL.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake C$:/Users/domin/CLionProjects/OpenGL/CMakeLists.txt CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /home/sean/CLionProjects/Windoof/CMakeLists.txt /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindOpenGL.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPackageMessage.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU-C.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/FindOpenGL.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake C$:/Users/domin/CLionProjects/OpenGL/CMakeLists.txt CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake: phony
+build /home/sean/CLionProjects/Windoof/CMakeLists.txt /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindOpenGL.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/FindPackageMessage.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU-C.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux-GNU.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/Linux.cmake /snap/clion/250/bin/cmake/linux/x64/share/cmake-3.26/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake: phony
 
 
 #############################################
