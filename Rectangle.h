@@ -10,10 +10,14 @@
 
 class Rectangle {
 public:
-    Rectangle(EventHandler *eventHandler, float width, float height, float centerX, float centerY, float smoothness = 0, float rotation = 0);
-    void move(double duration, float width, float height, float centerX, float centerY, float smoothness = 0, float rotation = 0);
+    Rectangle(EventHandler *eventHandler, float width, float height, float centerX, float centerY, float outlineScale = 0, float smoothness = 0, float rotation = 0);
+
+    void move(double duration, float width, float height, float centerX, float centerY, float outlineScale = 0, float smoothness = 0, float rotation = 0);
+
     void onFrame();
+
     static void init();
+
 private:
     struct {
         float width;
@@ -22,6 +26,7 @@ private:
         float centerY;
         float smoothness;
         float rotation;
+        float outlineScale;
     } m_start, m_end;
 
     double m_startTime;

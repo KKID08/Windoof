@@ -15,6 +15,7 @@ set(SOURCES main.cpp ${GLEW_PATH}/src/glew.c ${GLEW_PATH}/include/GL/glew.h
         EventHandler.h EventHandler.cpp
         Application.h Application.cpp
         Rectangle.h Rectangle.cpp
+        DefaultShader.h Shader.h
 )
 
 # Add the GLAD source files directly

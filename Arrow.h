@@ -3,6 +3,7 @@
 
 #include "EventHandler.h"
 #include "Shader.h"
+#include "Application.h"
 
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
@@ -11,9 +12,13 @@ class Arrow {
 public:
     Arrow();
     Arrow(EventHandler *eventHandler, float x, float y, float rotation, float scale);
+
     void move(float x, float y, float rotation, float scale, double duration);
+
     void onFrame();
+
     static void init();
+
 private:
 
     struct Point {

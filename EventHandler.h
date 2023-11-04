@@ -9,6 +9,7 @@ public:
     void listenOnFrame(std::function<void()> func);//void (*func)());
     //void endListenOnFrame(std::function<void()> func);//void (*func)());
     void execFrame();
+
 private:
     std::vector<std::function<void()>> frameListeners;//void (*)()> frameListeners;
 };

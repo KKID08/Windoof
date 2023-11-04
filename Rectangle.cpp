@@ -1,19 +1,17 @@
 #include "Rectangle.h"
 
-
 unsigned int Rectangle::shaderProgram;
 unsigned int Rectangle::VAO;
-float Application::aspectRatio;
+//float Application::aspectRatio;
 
-Rectangle::Rectangle(EventHandler *eventHandler, float width, float height, float centerX, float centerY, float smoothness, float rotation):
-    m_start({0, 0, 0, 0, 0, 0}),
-    m_end({width, height, centerX, centerY, smoothness, rotation}),
-    m_startTime(0), m_duration(0)
-{
-    eventHandler->listenOnFrame([this]{onFrame();});
+Rectangle::Rectangle(EventHandler *eventHandler, float width, float height, float centerX, float centerY, float outlineScale, float smoothness, float rotation) :
+        m_start({0, 0, 0, 0, 0, 0}),
+        m_end({width, height, centerX, centerY, smoothness, rotation, outlineScale}),
+        m_startTime(0), m_duration(0) {
+    eventHandler->listenOnFrame([this] { onFrame(); });
 }
 
-void Rectangle::move(double duration, float width, float height, float centerX, float centerY, float smoothness, float rotation) {
+void Rectangle::move(double duration, float width, float height, float centerX, float centerY, float outlineScale, float smoothness, float rotation) {
     m_start = m_end;
     m_duration = duration;
     m_startTime = glfwGetTime();
@@ -27,12 +25,14 @@ void Rectangle::onFrame() {
     glUniform1f(glGetUniformLocation(shaderProgram, "start.height"), m_start.height);
     glUniform1f(glGetUniformLocation(shaderProgram, "start.centerX"), m_start.centerX);
     glUniform1f(glGetUniformLocation(shaderProgram, "start.centerY"), m_start.centerY);
+    glUniform1f(glGetUniformLocation(shaderProgram, "start.outlineScale"), m_start.outlineScale);
     glUniform1f(glGetUniformLocation(shaderProgram, "start.smoothness"), m_start.smoothness);
     glUniform1f(glGetUniformLocation(shaderProgram, "start.rotation"), m_start.rotation);
     glUniform1f(glGetUniformLocation(shaderProgram, "end.width"), m_end.width);
     glUniform1f(glGetUniformLocation(shaderProgram, "end.height"), m_end.height);
     glUniform1f(glGetUniformLocation(shaderProgram, "end.centerX"), m_end.centerX);
     glUniform1f(glGetUniformLocation(shaderProgram, "end.centerY"), m_end.centerY);
+    glUniform1f(glGetUniformLocation(shaderProgram, "end.outlineScale"), m_end.outlineScale);
     glUniform1f(glGetUniformLocation(shaderProgram, "end.smoothness"), m_end.smoothness);
     glUniform1f(glGetUniformLocation(shaderProgram, "end.rotation"), m_end.rotation);
 
@@ -49,7 +49,6 @@ void Rectangle::onFrame() {
     //    float smoothness;
     //    float rotation;
 
-    // Bind the VAO and draw the triangle
     glBindVertexArray(VAO);
     glDrawArrays(GL_TRIANGLES, 0, 1);
 }
@@ -70,6 +69,4 @@ void Rectangle::init() {
     // 3. then set our vertex attributes pointers
     glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 2 * sizeof(float), nullptr);
     glEnableVertexAttribArray(0);
-    //glBindBuffer(GL_ARRAY_BUFFER, 0);
-    //glBindVertexArray(0);
 }

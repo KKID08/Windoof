@@ -1,7 +1,5 @@
 #include <iostream>
-#include "Application.h"
 #include "Arrow.h"
-
 
 unsigned int Arrow::shaderProgram;
 unsigned int Arrow::VAO;

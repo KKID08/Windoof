@@ -1,5 +1,7 @@
 #ifndef ARROW_APPLICATION_H
 #define ARROW_APPLICATION_H
+
+
 #include "EventHandler.h"
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
@@ -8,17 +10,19 @@
 class Application {
 public:
     explicit Application(GLFWwindow *window);
+
     EventHandler *getEventHandler();
+
     void exec(std::function<void()> func = nullptr);
 
     static int height;
     static int width;
     static float aspectRatio;
 private:
-    GLFWwindow* window;
+    GLFWwindow *window;
     EventHandler eventHandler;
-    inline static void compileShader();
 };
+
 
 /*
  * int a = 0

@@ -3,6 +3,7 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 #include <iostream>
+#include <csignal>
 
 #include "Application.h"
 #include "Arrow.h"
@@ -29,7 +30,7 @@ int main() {
     int windowWidth, windowHeight;
     glfwGetMonitorWorkarea(glfwGetPrimaryMonitor(), nullptr, nullptr, &windowWidth, &windowHeight);
 
-    GLFWwindow* window = glfwCreateWindow(windowWidth, windowHeight, "Translucent Background", nullptr, nullptr);
+    GLFWwindow *window = glfwCreateWindow(windowWidth, windowHeight, "Translucent Background", nullptr, nullptr);
     if (!window) return -1;
     //glfwSetWindowPos(window, 0, 0);
     glfwMakeContextCurrent(window);
@@ -39,7 +40,11 @@ int main() {
         return -1;
     }
 
+
     Arrow::init();
+    Rectangle::init();
+
+
     Application app(window);
 
     //int ac = 10;
@@ -49,7 +54,9 @@ int main() {
     //    arrow[i] = new Arrow(app.getEventHandler(), 0, 0, 0, 1);
     //}
 
+    Rectangle r(app.getEventHandler(), 0.2f, 0.2f, 0, 0, 0.4, 0, 0/*.7853982*/);
     Arrow arrow(app.getEventHandler(), 0.0, 0.0, -0.7853982, 0.1);
+
     //arrow_old.move(1, 1, 0.5, 1, 1);
     //Arrow arrow_old(app.getEventHandler(), 0, 0, 0.125, 0.5);
     //app.exec();

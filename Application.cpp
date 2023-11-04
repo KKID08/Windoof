@@ -5,10 +5,9 @@ int Application::width;
 //float Application::aspectRatio;
 
 Application::Application(GLFWwindow *window)
-: window(window)
-{
+        : window(window) {
     glfwGetWindowSize(window, &width, &height);
-    aspectRatio = (float)width / (float)height;
+    aspectRatio = (float) width / (float) height;
 }
 
 EventHandler *Application::getEventHandler() {
@@ -29,7 +28,4 @@ void Application::exec(std::function<void()> func) {
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
-}
-
-void Application::compileShader() {
 }
